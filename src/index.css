@@ -1,10 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --clr-accent: #EB455F;
+  --clr-accent-light: #F7A8B8;
+  --clr-accent-dark: #B71C1C;
+  --clr-bg-dark: #181D31;
+  --clr-bg-light: #FCFFE7;
+  --clr-text-dark: #2B3467;
+  --clr-text-light: #F7F7F7;
+  --clr-touch: #ADA2FF;
+}
+
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+
+body {
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  background-color: var(--clr-bg-dark);
+  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  /* Safari and Chrome */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Unbounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
 code {
