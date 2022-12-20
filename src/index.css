@@ -12,14 +12,14 @@
 
 :root {
   --clr-accent: #EB455F;
-  --clr-accent-light: #F7A8B8;
-  --clr-accent-dark: #B71C1C;
-  --clr-bg-dark: #181D31;
-  --clr-bg-light: #FCFFE7;
-  --clr-text-dark: #2B3467;
-  --clr-text-light: #F7F7F7;
-  --clr-touch: #ADA2FF;
+  --clr-bg: #181D31;
+  --clr-bg-shade: #010412;
+  --clr-bg-contrast: #FCFFE7;
+  --clr-text-main: #FCFFE7;
+  --clr-text-secondary: #453C67;
+  --clr-touch : #46C2CB;
 }
+
 
 
 
@@ -37,7 +37,7 @@ body {
   -ms-overflow-style: none;
   /* Internet Explorer 10+ */
   scrollbar-width: none;
-  background-color: var(--clr-bg-dark);
+  background-color: var(--clr-bg);
   /* Firefox */
 }
 

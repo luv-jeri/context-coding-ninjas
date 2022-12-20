@@ -5,9 +5,9 @@ hero {
     width: 100%;
     background-size: cover;
     text-align: center;
-    background-color: var(--clr-bg-light);
-    /* border: 1px solid var(--clr-bg-dark); */
-  
+    background-color: var(--clr-bg-contrast);
+    /* border: 1px solid var(--clr-bg); */
+
 }
 
 .logo_wrapper {
@@ -15,7 +15,7 @@ hero {
     align-items: center;
     justify-content: center;
     flex: 1;
-    background-color: var(--clr-bg-dark);
+    background-color: var(--clr-bg);
     margin: 0px;
     clip-path: polygon(0 0, 100% 0, 71% 100%, 0 100%);
 }
@@ -34,19 +34,18 @@ hero {
     flex-direction: column;
     text-align: end;
     flex: 1;
+    color: var(--clr-text-secondary);
 }
 
 .content h1 {
     font-size: 7rem;
     font-weight: 700;
-    color: var(--clr-text-dark);
     margin-bottom: 1rem;
 }
 
 .content h4 {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--clr-text-dark);
     margin-bottom: 1rem;
     color: var(--clr-accent);
 }
@@ -54,7 +53,6 @@ hero {
 .content p {
     font-size: 1.5rem;
     font-weight: 900;
-    color: var(--clr-text-dark);
     margin-bottom: 1rem;
 }
 
@@ -67,8 +65,8 @@ hero {
         text-align: center;
         flex-direction: column;
 
-        /* border: 1px solid var(--clr-bg-dark); */
-        /* background-color: var(--clr-text-dark); */
+        /* border: 1px solid var(--clr-bg); */
+        /* background-color: var(--clr-text-main); */
     }
 
     .logo_wrapper {

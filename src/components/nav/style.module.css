@@ -1,8 +1,8 @@
 nav {
     height: 10vh;
     width: 100vw;
-    background-color: var(--clr-bg-dark);
-    color: var(--clr-text-light);
+    background-color: var(--clr-bg);
+    color: var(--clr-text-main);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,15 +10,14 @@ nav {
     top: 0;
     left: 0;
     z-index: 3;
-    box-shadow: 0 0 1rem 0rem var(--clr-bg-dark);
+    box-shadow: 0 0 1rem 0rem var(--clr-bg);
 }
 
 .nav_container {
     height: 10vh;
     width: 90vw;
     margin: 0 auto;
-    background-color: var(--clr-bg-dark);
-    color: var(--clr-text-light);
+    background-color: var(--clr-bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -55,10 +54,9 @@ nav {
 }
 
 .icon {
-
     width: 3rem;
     aspect-ratio: 1/1;
-    background-color: var(--clr-bg-light);
+    background-color: var(--clr-bg-contrast);
     padding: 0.6rem;
     border-radius: 50%;
 }
@@ -70,7 +68,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-color: var(--clr-touch);
-    color: var(--clr-text-light);
+    color: var(--clr-text-main);
     border-radius: 50%;
     font-size: 2rem;
     font-weight: 600;

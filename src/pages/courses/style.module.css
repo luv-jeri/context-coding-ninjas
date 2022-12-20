@@ -1,7 +1,7 @@
 .heading {
     font-size: 2rem;
     font-weight: 600;
-    color: var(--clr-text-light);
+    color: var(--clr-text-main);
     margin-block: 1rem;
 }
 
@@ -24,7 +24,7 @@
     padding: 2rem;
     flex-direction: column;
     padding-block: 1rem;
-    background-color: var(--clr-bg-dark);
+    background-color: var(--clr-bg);
 }
 
 .card_container {

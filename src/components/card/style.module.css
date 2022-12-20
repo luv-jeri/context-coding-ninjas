@@ -6,27 +6,14 @@
     height: 300px;
     transition: all 0.1s linear;
     cursor: pointer;
-    color: var(--clr-text-light);
-    background: linear-gradient(to right, var(--clr-text-dark), var(--clr-bg-dark));
+    color: var(--clr-text-main);
+    background: linear-gradient(to right, var(--clr-bg-shade), var(--clr-bg));
 }
 
 .card_container:hover .image_container {
-    background-color: var(--clr-bg-dark);
+    background-color: var(--clr-bg);
     border: 10px solid var(--clr-accent);
     transform: scale(1.2);
-}
-
-.added {
-    position: absolute;
-    z-index: 10;
-   
-    width: 100%;
-    right: 0;
-    color : var(--clr-text-light);
-    font-size: 3rem;
-
-    background-color: var(--clr-bg-dark);
-
 }
 
 .card_content {
@@ -52,18 +39,14 @@
 
 .card_container:hover {
     transform: scale(0.9);
-    background: linear-gradient(to left, var(--clr-text-dark), var(--clr-bg-dark));
-}
+    background: linear-gradient(to left, var(--clr-bg-shade), var(--clr-bg));
 
-.card_container:hover .click_bait {
-    display: block;
-    animation: slideIn 0.2s ease-in-out;
-    animation-fill-mode: forwards;
 }
 
 
 .image_container {
-    background-color: var(--clr-bg-dark);
+    background-color: var(--clr-bg);
+    opacity: 0.9;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -79,63 +62,10 @@
     object-fit: cover;
     border-radius: 1rem;
     padding: 1rem;
-
 }
 
-.card_container p {
-    font-size: 1rem;
-    font-weight: 500;
-    /* color: var(--clr-text-dark);
-    margin-bottom: 1rem;
-    color: var(--clr-accent); */
-}
 
 .card_container h1 {
     font-size: 4rem;
     font-weight: 500;
-    /* color: var(--clr-text-dark);
-    margin-bottom: 1rem;
-    color: var(--clr-accent); */
-}
-
-
-@keyframes slideIn {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
-}
-
-@keyframes jump {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@keyframes background {
-    0% {
-        background-position: 0% 50%;
-
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }

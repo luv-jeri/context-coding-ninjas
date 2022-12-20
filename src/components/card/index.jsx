@@ -22,12 +22,7 @@ function Card({ title, onClick, img, id }) {
       }}
     >
       <div className={style.card_image}>
-        <div
-          className={style.image_container}
-          style={{
-            backgroundColor: isIn ? '#227C70' : '#181D31',
-          }}
-        >
+        <div className={style.image_container}>
           <img src={img} alt='icons' />
         </div>
       </div>
