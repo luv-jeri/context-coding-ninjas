@@ -17,9 +17,29 @@
   --clr-bg-contrast: #FCFFE7;
   --clr-text-main: #FCFFE7;
   --clr-text-secondary: #453C67;
-  --clr-touch : #46C2CB;
+  --clr-touch: #46C2CB;
 }
 
+
+.dark-theme {
+  --clr-accent: #EB455F;
+  --clr-bg: #181D31;
+  --clr-bg-shade: #010412;
+  --clr-bg-contrast: #2B3A55;
+  --clr-text-main: #FCFFE7;
+  --clr-text-secondary: #FEFCF3;
+  --clr-touch: #46C2CB;
+}
+
+.light-theme {
+  --clr-accent: #EB455F;
+  --clr-bg: #FCFFE7;
+  --clr-bg-shade: #c0c7e7;
+  --clr-bg-contrast: #181D31;
+  --clr-text-main: #181D31;
+  --clr-text-secondary: #FFFBE9;
+  --clr-touch: #46C2CB;
+}
 
 
 

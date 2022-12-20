@@ -1,9 +1,11 @@
 import React from 'react';
 import style from './style.module.css';
 import useCart from '../../context/Cart.context';
+import useTheme from '../../context/Theme.context';
 
 function Nav() {
   const { cart } = useCart();
+  const { toggleTheme } = useTheme();
   return (
     <nav>
       <div className={style.nav_container}>
@@ -17,7 +19,7 @@ function Nav() {
         </div>
         <div className={style.nav_details}>
           <h4 className={style.name}>Hello Sanjay</h4>
-          <div className={style.nav_icon_wrapper}>
+          <div className={style.nav_icon_wrapper} onClick={toggleTheme}>
             <div>
               <h4 className={style.cart_count}>{cart.length}</h4>
             </div>

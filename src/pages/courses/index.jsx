@@ -33,7 +33,7 @@ const coursesData = [
 ];
 
 function Courses() {
-  const { addToCart, isInCart } = useCart();
+  const { cart, addToCart, isInCart } = useCart();
   return (
     <div className={style.courses_container}>
       <div className={style.heading}>
