@@ -14,13 +14,6 @@ export default function useCart() {
 const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(JSON.parse(localStorage.getItem('cart')) || []);
 
-  const addToCart = (product) => {
-    if (isInCart(product)) return;
-    setCart([...cart, product]);
-  };
-
-  const removeFromCart = (product) => {};
-
   const clearCart = () => {
     setCart([]);
   };
@@ -30,10 +23,10 @@ const CartProvider = ({ children }) => {
   };
 
   const cartHandler = (id) => {
-    const item = coursesData.find((item) => item.id === id);
     const isIn = cart.find((item) => item.id === id);
-
+    
     if (!isIn) {
+      const item = coursesData.find((item) => item.id === id);
       setCart([...cart, item]);
       return true;
     } else {
