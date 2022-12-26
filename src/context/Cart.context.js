@@ -1,4 +1,5 @@
 import React, { useState, useEffect, createContext, useContext } from 'react';
+import coursesData from '../data/courses.json';
 
 const CartContext = createContext();
 
@@ -18,16 +19,28 @@ const CartProvider = ({ children }) => {
     setCart([...cart, product]);
   };
 
-  const removeFromCart = (product) => {
-    setCart(cart.filter((item) => item.id !== product.id));
-  };
+  const removeFromCart = (product) => {};
 
   const clearCart = () => {
     setCart([]);
   };
 
-  const isInCart = (product) => {
-    return !!cart.find((item) => item.id === product.id);
+  const isInCart = (id) => {
+    return !!cart.find((item) => item.id === id);
+  };
+
+  const cartHandler = (id) => {
+    const item = coursesData.find((item) => item.id === id);
+    const isIn = cart.find((item) => item.id === id);
+
+    if (!isIn) {
+      setCart([...cart, item]);
+      return true;
+    } else {
+      const newCart = cart.filter((item) => item.id !== id);
+      setCart(newCart);
+      return false;
+    }
   };
 
   useEffect(() => {
@@ -35,9 +48,7 @@ const CartProvider = ({ children }) => {
   }, [cart]);
 
   return (
-    <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, clearCart, isInCart }}
-    >
+    <CartContext.Provider value={{ cart, clearCart, isInCart, cartHandler }}>
       {children}
     </CartContext.Provider>
   );

@@ -3,7 +3,7 @@ import style from './style.module.css';
 
 function Hero() {
   return (
-    <hero>
+    <header>
       <section className={style.logo_wrapper}>
         <img
           className={style.logo}
@@ -19,7 +19,7 @@ function Hero() {
           tutorials is great, but understanding how developers think is invaluable.
         </p>
       </section>
-    </hero>
+    </header>
   );
 }
 
